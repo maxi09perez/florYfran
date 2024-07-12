@@ -14,16 +14,17 @@ body {
 header {
     text-align: center;
     place-items: center;
-    /* background-image: url(../imagenes/fondo.jpeg);
-    background-size: cover; */
+    background-image: url(../imagenes/fondo-portada.png);
+    background-size: 100% 100%;;
     /* filter: saturate(120%);  */   
     width: 100%;
     height: 100vh;
-    /* background-repeat: no-repeat;
-    background-position: center; */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header h2{
+    color: #aa770e;
     font-size: 8rem;
     font-weight: 100;
     font-family: "Fleur De Leah", cursive;
@@ -34,37 +35,291 @@ header h2 span{
 }
 
 header p{
-    /* color: #f8f6f1; */
+    color: #aa770e;
     font-size: 2rem;
-    font-family: "Bodoni Moda SC", serif;
+    font-family: "Inter", sans-serif;
 }
 
 header h4{
-    /* color: #f8f6f1; */
+    color: #aa770e;
     font-size: 2rem;
-    font-family: "Bodoni Moda SC", serif;
+    font-family: "Inter", sans-serif;
     font-weight: 100;
 }
 
 header img{
     width: 200px; /* Ajusta el ancho según sea necesario */
     height: auto;
-    border-radius: 45%;
-    border: 10px solid;
-    border-color: linear-gradient(
-        -72deg,
-        #ffc373,
-        #ffffff 16%,
-        #ffc373 21%,
-        #ffffff 24%,
-        #a17434 27%,
-        #ffc373 36%,
-        #ffffff 45%,
-        #ffffff 60%,
-        #ffc373 72%,
-        #ffffff 80%,
-        #ffc373 84%,
-        #a17434
-    );
+    border-radius: 48%;
+    border: 10px solid transparent;
+    background: linear-gradient(#151515, #151515) padding-box,
+        linear-gradient(-72deg, #ffc373, #ffffff 16%, #ffc373 21%, #ffffff 24%, #a17434 27%, #ffc373 36%, #ffffff 45%, #ffffff 60%, #ffc373 72%, #ffffff 80%, #ffc373 84%, #a17434) border-box;
+    /* border-image: linear-gradient( -72deg, #ffc373, #ffffff 16%, #ffc373 21%, #ffffff 24%, #a17434 27%, #ffc373 36%, #ffffff 45%, #ffffff 60%, #ffc373 72%, #ffffff 80%, #ffc373 84%, #a17434); */
     
+    
+}
+
+/* Temporizador */
+
+.tempo{
+    margin: 1rem auto;
+    width: 350px;
+    height: 350px;
+    background-image: url(../imagenes/fondo-temp.png);
+    background-size: cover;
+    text-align: center;
+}
+
+.tempo h2{
+    padding-top: 100px;
+    font-family: "Fleur De Leah", cursive;
+    font-size: 30px;
+    color: #aa770e;
+}
+#temporizador{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.simply-section{
+    color: #aa770e;
+    margin: 0px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simply-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: "Fleur De Leah", cursive;
+}
+
+.simply-word{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+/* Ceremonia y Fiesta */
+
+#datos {
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card{
+    margin: 0 auto;
+    width: 250px;
+    height: 400px;
+}
+
+.card h3{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f6f1;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.card p{
+    padding: 10px;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f8f6f1;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    
+}
+.c1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/parroquia01.png);
+    filter: opacity(200%);
+}
+
+.c2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/terra_oliva01.png);
+}
+
+.c1, .c2{
+    background-size: cover;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.btn {
+    text-decoration: none;
+    margin: 2rem auto;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.8em;
+    color: rgb(121, 103, 3);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-duration: 3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    background-size: 200% 200%;
+  }
+/* Galeria */
+#galeria{
+    height: 100vh;
+    text-align: center;
+}
+
+#galeria h3{
+    padding-top: 2rem;
+    font-family: "Tangerine", cursive;
+    font-size: 4rem;
+    color: #aa770e;
+}
+
+#galeria h4{
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: #aa770e;
+}
+.gal{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    overflow: hidden;
+    width: 90%;
+}
+
+.wrap{
+    padding-bottom: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 400px;
+    justify-items: stretch;
+    animation: slide 40s linear infinite;
+}
+
+.wrap img{
+    
+    width: 300px;
+    height: 300px;
+    border-width: 10px 10px 30px 10px;
+    border-style: solid;
+    border-color: white;
+    filter: drop-shadow(4px 4px 5px #e1c699);
+    /* border-radius: 15px; */
+    object-fit: cover;
+}
+
+@keyframes slide {
+    to {
+        translate: calc(-4 * 1200px);
+    }
+}
+
+/* Tarjeta */
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    filter: drop-shadow(4px 4px 5px #e1c699);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+}
+  
+.content {
+    padding: 20px;
+}
+  
+.content .price {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+  
+.content .description {
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    margin-top: 10px;
+    font-size: 15px;
+}
+  
+.content .title {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+  
+button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #aa770e;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+}
+
+  /* Otra informacion */
+#informacion {
+    padding-top: 2rem;
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.info {
+    margin: 0 auto;
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #f8f8f8;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #f8f6f1;
 }

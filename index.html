@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:opsz,wght@6..96,500&family=Fleur+De+Leah&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h4>Los invitamos a nuestra Boda</h4>
-        <h2>Flor &nbsp<span>&</span> Fran</h2>
-        <img src="imagenes/fondo.jpeg">
-        <p>descripcion, reseña, palabras de los novios, etc.</p>
+        <div class="portada">
+            <div class="padre"><h2>Flor <br class="reducir"><span>&</span><br class="reducir"> Fran</h2></div>
+            <div class="hijo"><p>"Hoy me vuelvo otra vez y no puedo <br> entender tanta magia y no estar en el cielo. <br>
+                Ya no quiero nada mas"</p>
+            </div>
+        </div>
     </header>
+
+    <h6>Encontrar nuestras almas en ese lugar</h6>
 
     <section id="datos">
         <div class="card c1">
-            <h3><i class="fa-solid fa-cross"></i>&nbspCeremonia</h3>
+            <div><img src="imagenes/ico_cer.png" width="70px" height="70px" alt=""> <h3> Ceremonia</h3></div>
             <p>
                 La misa se realizara el dia 27 de Abril del 2025,
                 en la Parroquia Sagrado Corazon de Jesus a las 12:00AM
@@ -29,7 +34,7 @@
         </div>
 
         <div class="card c2">
-            <h3><i class="fa-solid fa-champagne-glasses"></i>&nbspFiesta</h3>
+            <div><img src="imagenes/ico_fie.png" width="70px" height="70px" alt=""><h3>Fiesta</h3></div>
             <p>
                 Para celebrar nuestra union realizaremos la fiesta
                 en Terra Oliva a las 13:00PM
@@ -40,14 +45,14 @@
 
     
     <div class="tempo">
-        <h2>Falta</h2>
+        <h2>Faltan</h2>
         <div id="temporizador"></div>
     </div>
     
 
     <section id="galeria">
         <h3>Retratos de Nuestro Amor</h3>
-        <h4>Un minuto, un segundo, un instante que queda en la eternidad</h4>
+        <h4>Frenar el tiempo en el preciso instante que sos feliz</h4>
         <div class="gal">
             <div class="carousel">
                 <div class="wrap">
@@ -68,7 +73,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="tarj">
         <div class="tarjeta">
             <div class="content">
               <div class="title">Tarjeta</div>
@@ -88,14 +93,49 @@
     </section>
 
     <section id="informacion">
-        <div class="info"><i class="fa-solid fa-person-half-dress"></i></div>
-        <div class="info"><i class="fa-solid fa-user-check"></i></div>
-        <div class="info"><i class="fa-solid fa-music"></i></div>
+        <div class="info">
+            <h4>Dress Code</h4>
+            <img src="imagenes/ico_dre.png" width="80px" height="80px" alt="">
+            <p>Nota: se recomienda que las mujeres eviten el uso de blanco y azul.</p>
+            <a href="#" class="btn">FORMAL</a>
+        </div>
+        <div class="info">
+            <h4>Instagram</h4>
+            <img src="imagenes/ico_ins.png" width="80px" height="80px" alt="">
+            <p>Compartimos este día junto a vos, para que puedas seguirlo, enterarte de novedades y luego ver todas las fotos de la fiesta.</p>
+            <a class="btn" target="_blank" href="https://www.instagram.com/floryfran.boda?utm_source=qr&igsh=MWtxaHRjOHU4b2V6OQ==">@FLORYFRAN.BODA</a>
+        </div>
+        <div class="info">
+            <h4>Musica</h4>
+            <img src="imagenes/ico_mus.png" width="80px" height="80px" alt="">
+            <p>¿Cuál es la canción que no debe faltar en la PlayList de la fiesta?</p>
+            <a class="btn" target="_blank" href="https://docs.google.com/forms/d/1cAUiuKX1-dnl54Ttn4OKRaxnivWnt79g9pdac_ZqCsQ/edit">SUGERIR CANCIÓN</a>
+        </div>
     </section>
 
     <footer>
-
+        <p>Desarrollado con <span>♥</span> por Maxi Perez</p>
+        <br>
+        <img src="Imagenes/arg.png" alt="" width="30px" height="30px">
     </footer>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-w"><i class="fa-brands fa-whatsapp"></i></label>
+        <div class="back-w">
+            <h5>Contactanos!</h5>
+            <div class="w-novios">
+                <div class="w-nov">
+                    <img src="Imagenes/w-flor.png" class="f-w">
+                    <a href="https://wa.me/542616401297" target="_blank" class="hip-n">Flor</a>
+                </div>
+                <div class="w-nov">
+                    <img src="Imagenes/w-fran.png" class="f-w">
+                    <a href="https://wa.me/542616461069" target="_blank" class="hip-n">Fran</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <script src="funciones/simplyCountdown.min.js"></script>
     <script src="funciones/funciones.js"></script>

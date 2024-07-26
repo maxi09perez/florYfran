@@ -42,16 +42,24 @@ header .portada{
 
 .portada h2{
     
-    color: #ddab1a;
-    font-size: 6rem;
+    color: #aa770e;
+    font-size: 7rem;
     font-weight: 100;
-    font-family: "Kalnia", serif;
-    line-height: 85%;
+    /* font-family: "Fleur De Leah", cursive; */
+    font-family: "Tangerine", cursive;
+    /* font-family: "Inter", sans-serif; */
+    /* font-family: "Playfair Display", serif; */
+    /* font-family: "Kalnia", serif; */
+    line-height: 80%;
 }
 
 
 .portada h2 span{
-    font-family: "Playfair Display", serif;
+    /* font-family: "Fleur De Leah", cursive; */
+    font-family: "Tangerine", cursive;
+    /* font-family: "Inter", sans-serif; */
+    /*font-family: "Playfair Display", serif;*/
+    /* font-family: "Kalnia", serif; */
     font-weight: 600;
 }
 

@@ -30,6 +30,18 @@ header {
     background-position: center;
 }
 
+header .todo{
+    display: flex;
+}
+
+header .img1{
+    height: 100vh;
+}
+
+header .img2{
+    display: none;
+}
+
 header .portada{
     margin-left: 2rem;
     width: 50%;
@@ -75,19 +87,33 @@ header .portada{
         background-image: url(../imagenes/portada-cel02.png);
     }
 
+    header .img1{
+        display: none;
+    }
+
     header .portada{
         display: block;
         width: 100%;
         margin-left: 0px;
     }
 
+    header .img2{
+        display: block;
+        height: 90%;
+    }
+
+    header .img2 img{
+        height: 100%;
+    }
+
     .portada .padre{
         height: 50%;
-        width: 45%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
 
     .padre h2{
         font-size: 4rem;
@@ -168,7 +194,7 @@ h6{
     padding: 4rem 0;
     font-family: "Tangerine", cursive;
     font-size: 4rem;
-    color: #ddab1a;
+    color: #aa770e;
 }
 
 @media (max-width: 615px) {
@@ -258,6 +284,24 @@ h6{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
     background-size: 200% 200%;
 }
+
+/* Ramas */
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.objeto1 img, .objeto2 img{
+    width: 150px;
+}
+
+@media (orientation: portrait) {
+    .objeto1 img, .objeto2 img{
+        width: 100px;
+    }
+}
+
 /* Galeria */
 #galeria{
     height: 100vh;
@@ -268,13 +312,13 @@ h6{
     padding-top: 2rem;
     font-family: "Tangerine", cursive;
     font-size: 4rem;
-    color: #ddab1a;
+    color: #aa770e;
 }
 
 #galeria h4{
     font-family: "Playfair Display", serif;
     font-size: 1.3rem;
-    color: #ddab1a;
+    color: #aa770e;
 }
 
 @media (max-width: 524px) {
